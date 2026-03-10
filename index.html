@@ -50,13 +50,78 @@
             </tbody>
           </table>
 
+          <!-- Preprints Header -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>
+                    Preprints 
+                    <!-- <span style="font-size: 14px; font-weight: normal;">
+                      (<eq>*</eq> denotes equal contribution)
+                    </span> -->
+                  </h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <!-- Preprints List -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+                <!-- SURVEY -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:top">
+                  <div class="one">
+                    <div class="two" id='survey'>
+                      <img src='images/survey.png' width=100%>
+                    </div>
+                    <img src='images/survey.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('survey').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('survey').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:top">
+                  <a>
+                    <span class="papertitle">
+                      Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey
+                    </span>
+                  </a>
+                  <br>
+                  Rui Shao, <strong>Wei Li</strong>, Lingsen Zhang, Renshan Zhang, Zhiyang Liu, Ran Chen, Liqiang Nie
+                  <br>
+                  <!-- <em>CVPR 2025</em> -->
+                  <!-- <br> -->
+                  <a href="https://arxiv.org/abs/2508.13073">arXiv</a> /
+                  <a href="https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation">github</a>
+                  <p></p>
+                  <p>
+                    This survey provides the first systematic, taxonomy-oriented review of large VLM-based VLA models for robotic manipulation.
+                  </p>
+                </td>
+              </tr>  
+
+            
+            </tbody>
+          </table>
+
+
           <!-- Publications Header -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>
-                    Selected Publications 
+                    Publications 
                     <!-- <span style="font-size: 14px; font-weight: normal;">
                       (<eq>*</eq> denotes equal contribution)
                     </span> -->
@@ -69,21 +134,23 @@
           <!-- Publications List -->
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <!-- cogvla Paper -->
+
+
+              <!-- ConsisVLA-4D Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
                 <td style="padding:16px;width:40%;vertical-align:top">
                   <div class="one">
-                    <div class="two" id='cogvla'>
-                      <img src='images/cogvla.png' width=100%>
+                    <div class="two" id='ConsisVLA-4D'>
+                      <img src='images/ConsisVLA-4D.png' width=100%>
                     </div>
-                    <img src='images/cogvla.png' width=100%>
+                    <img src='images/ConsisVLA-4D.png' width=100%>
                   </div>
                   <script type="text/javascript">
                     function star_start() {
-                      document.getElementById('cogvla').style.opacity = "1";
+                      document.getElementById('ConsisVLA-4D').style.opacity = "1";
                     }
                     function star_stop() {
-                      document.getElementById('cogvla').style.opacity = "0";
+                      document.getElementById('ConsisVLA-4D').style.opacity = "0";
                     }
                     afllm_stop()
                   </script>
@@ -91,20 +158,20 @@
                 <td style="padding:8px;width:60%;vertical-align:top">
                   <a>
                     <span class="papertitle">
-                      CogVLA: Cognition-Aligned Vision-Language-Action Models via Instruction-Driven Routing & Sparsification
+                      ConsisVLA-4D: Advancing Spatiotemporal Consistency in Efficient 3D-Perception and 4D-Reasoning for Robotic Manipulation
                     </span>
                   </a>
                   <br>
-                  <strong>Wei Li</strong>, Renshan Zhang, Rui Shao, Jie He, Liqiang Nie
+                  <strong>Wei Li</strong>, Jizhihui Liu, Li Yixing, Junwen Tong, Rui Shao, Liqiang Nie
                   <br>
-                  <em>NeurIPS 2025</em>
+                  <em>CVPR 2026</em>
                   <br>
-                  <a href="https://arxiv.org/abs/2508.21046">arXiv</a> /
-                  <a href="https://github.com/JiuTian-VL/CogVLA">github</a>
+                  <!-- <a href="https://arxiv.org/abs/2511.10518">arXiv</a> /
+                  <a href="https://github.com/JiuTian-VL/SemanticVLA">github</a> -->
                   <p></p>
                   <p>
-                    We presented CogVLA, a cognition-aligned and instruction-driven Vision-Language-Action framework designed 
-                    to address the computational inefficiencies and semantic fragmentation in existing VLA models
+                    ConsisVLA-4D optimizes VLA models by ensuring consistency across three dimensions. Semantic: Aligns object identities across multiple viewpoints. 
+                    Geometric: Resolves spatial ambiguities between objects. Spatiotemporal: Integrates local dynamics and global depth for 4D reasoning.
                   </p>
                 </td>
               </tr>
@@ -152,6 +219,49 @@
 
 
 
+
+              <!-- cogvla Paper -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:top">
+                  <div class="one">
+                    <div class="two" id='cogvla'>
+                      <img src='images/cogvla.png' width=100%>
+                    </div>
+                    <img src='images/cogvla.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('cogvla').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('cogvla').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:top">
+                  <a>
+                    <span class="papertitle">
+                      CogVLA: Cognition-Aligned Vision-Language-Action Models via Instruction-Driven Routing & Sparsification
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Wei Li</strong>, Renshan Zhang, Rui Shao, Jie He, Liqiang Nie
+                  <br>
+                  <em>NeurIPS 2025</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2508.21046">arXiv</a> /
+                  <a href="https://github.com/JiuTian-VL/CogVLA">github</a>
+                  <p></p>
+                  <p>
+                    We presented CogVLA, a cognition-aligned and instruction-driven Vision-Language-Action framework designed 
+                    to address the computational inefficiencies and semantic fragmentation in existing VLA models.
+                  </p>
+                </td>
+              </tr>
+
+
+
               <!-- lion-fs Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
                 <td style="padding:16px;width:40%;vertical-align:top">
@@ -193,45 +303,7 @@
                 </td>
               </tr>      
               
-              
-                <!-- SURVEY -->
-              <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
-                  <div class="one">
-                    <div class="two" id='survey'>
-                      <img src='images/survey.png' width=100%>
-                    </div>
-                    <img src='images/survey.png' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function star_start() {
-                      document.getElementById('survey').style.opacity = "1";
-                    }
-                    function star_stop() {
-                      document.getElementById('survey').style.opacity = "0";
-                    }
-                    afllm_stop()
-                  </script>
-                </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
-                  <a>
-                    <span class="papertitle">
-                      Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey
-                    </span>
-                  </a>
-                  <br>
-                  Rui Shao, <strong>Wei Li</strong>, Lingsen Zhang, Renshan Zhang, Zhiyang Liu, Ran Chen, Liqiang Nie
-                  <br>
-                  <!-- <em>CVPR 2025</em> -->
-                  <!-- <br> -->
-                  <a href="https://arxiv.org/abs/2508.13073">arXiv</a> /
-                  <a href="https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation">github</a>
-                  <p></p>
-                  <p>
-                    This survey provides the first systematic, taxonomy-oriented review of large VLM-based VLA models for robotic manipulation.
-                  </p>
-                </td>
-              </tr>  
+
               
               
               <!-- scoot Paper -->
