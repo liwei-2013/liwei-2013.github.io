@@ -71,6 +71,82 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+                <!-- UniMPA -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:top">
+                  <div class="one">
+                    <div class="two" id='unimpa'>
+                      <img src='images/UniMPA.png' width=100%>
+                    </div>
+                    <img src='images/UniMPA.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('unimpa').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('unimpa').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:top">
+                  <a>
+                    <span class="papertitle">
+                      UniMPA: A Unified Memory-Prediction-Action Model via Action-Grounded Transition Modeling
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Wei Li</strong>, Rui Shao, Jie He, Lingsen Zhang, Ziwei Liu, Liqiang Nie
+                  <br>
+                  <a href="https://arxiv.org/abs/2609.11875">arXiv</a> /
+                  <a href="https://jiutian-vl.github.io/UniMPA-page/">project page</a>
+                  <p></p>
+                  <p>
+                    We propose UniMPA, a unified memory-prediction-action model that unifies anticipation, experience grounding, and action refinement through an action-grounded transition.
+                  </p>
+                </td>
+              </tr>
+
+
+                <!-- ProWAM -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:top">
+                  <div class="one">
+                    <div class="two" id='prowam'>
+                      <img src='images/prowam.png' width=100%>
+                    </div>
+                    <img src='images/prowam.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('prowam').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('prowam').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:top">
+                  <a>
+                    <span class="papertitle">
+                      Learning to Use Imagination: Progress-Conditioned Future Utilization for World Action Models
+                    </span>
+                  </a>
+                  <br>
+                  Yijie Zhu, Zitong Yu, <strong>Wei Li</strong>, Hui Ma, Wen Li, Rui Shao, Liqiang Nie
+                  <br>
+                  <a href="https://arxiv.org/abs/2609.06578">arXiv</a> /
+                  <a href="https://github.com/JiuTian-VL/ProWAM">github</a>
+                  <p></p>
+                  <p>
+                    We propose ProWAM, a Progress-Conditioned World Action Model that introduces execution progress as an explicit intermediate representation for adaptive imagination utilization.
+                  </p>
+                </td>
+              </tr>
+
+
                 <!-- SURVEY -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
                 <td style="padding:16px;width:40%;vertical-align:top">
@@ -444,8 +520,7 @@
                   </span><strong>Conference Reviewer</strong>
                       </div>
                           <div style="line-height:1.5;margin-top:2px; margin-left:24px;">
-                            CV: CVPR, ECCV<br>
-                            ML: NeurIPS, ICML
+                            CVPR, ECCV, NeurIPS, ICML, AAAI
                           </div>
                         </div>
                 </td>
@@ -458,7 +533,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="font-size:small;display:flex;justify-content:space-between;align-items:center;">
-                    <span>Last updated: May 2026</span>
+                    <span>Last updated: September 2026</span>
                     <span>Template by <a href="https://jonbarron.info/">Jon Barron</a>.</span>
                   </p>
                 </td>
