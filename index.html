@@ -25,7 +25,7 @@
                     Wei Li (李巍)
                   </p>
                   <p>
-                    I am Wei Li, a second-year Ph.D. student in the School of Computer Science and Technology, Harbin Institute 
+                    I am Wei Li, a third-year Ph.D. student in the School of Computer Science and Technology, Harbin Institute 
                     of Technology (Shenzhen), advised by <a href="https://rshaojimmy.github.io/OrionLab/index.html">Prof. Rui Shao</a>. 
                     My research interests include Computer Vision, Vision-Language Models, 
                     and Vision-Language–Action Models.
@@ -56,10 +56,10 @@
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>
-                    Preprints 
-                    <!-- <span style="font-size: 14px; font-weight: normal;">
-                      (<eq>*</eq> denotes equal contribution)
-                    </span> -->
+                    Preprints
+                    <span style="font-size: 14px; font-weight: normal;">
+                      (<eq>*</eq> equal contribution, <eq>&dagger;</eq> corresponding author)
+                    </span>
                   </h2>
                 </td>
               </tr>
@@ -73,7 +73,7 @@
 
                 <!-- UniMPA -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='unimpa'>
                       <img src='images/UniMPA.png' width=100%>
@@ -90,7 +90,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       UniMPA: A Unified Memory-Prediction-Action Model via Action-Grounded Transition Modeling
@@ -111,7 +111,7 @@
 
                 <!-- ProWAM -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='prowam'>
                       <img src='images/prowam.png' width=100%>
@@ -128,14 +128,14 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       Learning to Use Imagination: Progress-Conditioned Future Utilization for World Action Models
                     </span>
                   </a>
                   <br>
-                  Yijie Zhu, Zitong Yu, <strong>Wei Li</strong>, Hui Ma, Wen Li, Rui Shao, Liqiang Nie
+                  Yijie Zhu<eq>*</eq>, Zitong Yu<eq>*</eq>, <strong>Wei Li</strong><eq>*</eq>, Hui Ma, Wen Li, Rui Shao, Liqiang Nie
                   <br>
                   <a href="https://arxiv.org/abs/2609.06578">arXiv</a> /
                   <a href="https://github.com/JiuTian-VL/ProWAM">github</a>
@@ -149,7 +149,7 @@
 
                 <!-- SURVEY -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='survey'>
                       <img src='images/survey.png' width=100%>
@@ -166,14 +166,14 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey
                     </span>
                   </a>
                   <br>
-                  Rui Shao, <strong>Wei Li</strong>, Lingsen Zhang, Renshan Zhang, Zhiyang Liu, Ran Chen, Liqiang Nie
+                  Rui Shao, <strong>Wei Li</strong><eq>&dagger;</eq>, Lingsen Zhang, Renshan Zhang, Zhiyang Liu, Ran Chen, Liqiang Nie
                   <br>
                   <!-- <em>CVPR 2025</em> -->
                   <!-- <br> -->
@@ -197,10 +197,10 @@
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>
-                    Publications 
-                    <!-- <span style="font-size: 14px; font-weight: normal;">
-                      (<eq>*</eq> denotes equal contribution)
-                    </span> -->
+                    Publications
+                    <span style="font-size: 14px; font-weight: normal;">
+                      (<eq>*</eq> equal contribution, <eq>&dagger;</eq> corresponding author)
+                    </span>
                   </h2>
                 </td>
               </tr>
@@ -212,9 +212,49 @@
             <tbody>
 
 
+              <!-- ATI-VLA -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='ati-vla'>
+                      <img src='images/ATI-VLA2.png' width=100%>
+                    </div>
+                    <img src='images/ATI-VLA2.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('ati-vla').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('ati-vla').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:middle">
+                  <a>
+                    <span class="papertitle">
+                      ATI-VLA: Action-Centric Predictive Vision-Language-Action Models via Actionable Alignment Then Adaptive Injection
+                    </span>
+                  </a>
+                  <br>
+                  Yijie Zhu, Rui Shao, Jie He, <strong>Wei Li</strong>, Bo Zhao, Yelin Wang, Xiaochen Yuan, Tao Tan, Miao Zhang, Xiaojiang Peng, Zitong Yu
+                  <br>
+                  <em>NeurIPS 2026</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2610.01741">arXiv</a> /
+                  <a href="https://jiutian-vl.github.io/ATI-VLA-page/">project page</a>
+                  <p></p>
+                  <p>
+                    ATI-VLA is an action-centric predictive VLA framework that first aligns predictive observation and action representations in a shared discrete codebook, then adaptively injects the predictive latents into action decoding via a lightweight side-path, achieving state-of-the-art performance with faster convergence.
+                  </p>
+                </td>
+              </tr>
+
+
               <!-- ConsisVLA-4D Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='ConsisVLA-4D'>
                       <img src='images/ConsisVLA-4D.png' width=100%>
@@ -231,7 +271,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       ConsisVLA-4D: Advancing Spatiotemporal Consistency in Efficient 3D-Perception and 4D-Reasoning for Robotic Manipulation
@@ -255,7 +295,7 @@
 
               <!-- semanticvla Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='semanticvla'>
                       <img src='images/semanticvla.png' width=100%>
@@ -272,7 +312,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       SemanticVLA: Semantic-Aligned Sparsification and Enhancement for Efficient Robotic Manipulation
@@ -298,7 +338,7 @@
 
               <!-- cogvla Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='cogvla'>
                       <img src='images/cogvla.png' width=100%>
@@ -315,7 +355,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       CogVLA: Cognition-Aligned Vision-Language-Action Models via Instruction-Driven Routing & Sparsification
@@ -340,7 +380,7 @@
 
               <!-- lion-fs Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='lion-fs'>
                       <img src='images/lion-fs.png' width=100%>
@@ -357,7 +397,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant
@@ -384,7 +424,7 @@
               
               <!-- scoot Paper -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
-                <td style="padding:16px;width:40%;vertical-align:top">
+                <td style="padding:16px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='scoot'>
                       <img src='images/scoot.jpg' width=100%>
@@ -401,7 +441,7 @@
                     afllm_stop()
                   </script>
                 </td>
-                <td style="padding:8px;width:60%;vertical-align:top">
+                <td style="padding:8px;width:60%;vertical-align:middle">
                   <a>
                     <span class="papertitle">
                       SCOOT: Self-supervised Centric Open-set Object Tracking
@@ -443,7 +483,7 @@
             <tbody>
 
               <tr>
-                <td style="padding:5px 16px;width:100%;vertical-align:top;">
+                <td style="padding:5px 16px;width:100%;vertical-align:middle;">
                   <div style="display:flex;gap:12px;">
                     <span style="color:#999;margin-top:2px;">•</span>
                     <div style="flex:1;">
@@ -464,7 +504,7 @@
 
 
               <tr>
-                <td style="padding:5px 16px;width:100%;vertical-align:top;">
+                <td style="padding:5px 16px;width:100%;vertical-align:middle;">
                   <div style="display:flex;gap:12px;">
                     <span style="color:#999;margin-top:2px;">•</span>
                     <div style="flex:1;">
@@ -483,7 +523,7 @@
               </tr>
 
               <tr>
-                <td style="padding:5px 16px;width:100%;vertical-align:top;">
+                <td style="padding:5px 16px;width:100%;vertical-align:middle;">
                   <div style="display:flex;gap:12px;">
                     <span style="color:#999;margin-top:2px;">•</span>
                     <div style="flex:1;">
@@ -520,7 +560,7 @@
                   </span><strong>Conference Reviewer</strong>
                       </div>
                           <div style="line-height:1.5;margin-top:2px; margin-left:24px;">
-                            CVPR, ECCV, NeurIPS, ICML, AAAI
+                            CVPR, ECCV, NeurIPS, ICML, AAAI, ICLR
                           </div>
                         </div>
                 </td>
