@@ -71,6 +71,44 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+                <!-- ProAct -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()">
+                <td style="padding:16px;width:40%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='proact'>
+                      <img src='images/ProAct.png' width=100%>
+                    </div>
+                    <img src='images/ProAct.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function star_start() {
+                      document.getElementById('proact').style.opacity = "1";
+                    }
+                    function star_stop() {
+                      document.getElementById('proact').style.opacity = "0";
+                    }
+                    afllm_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:60%;vertical-align:middle">
+                  <a>
+                    <span class="papertitle">
+                      World-Calibrated Proposal-to-Action Flow for Vision-Language-Action Models
+                    </span>
+                  </a>
+                  <br>
+                  Jie He<eq>*</eq>, <strong>Wei Li</strong><eq>*</eq>, Junwen Tong<eq>*</eq>, Rui Shao, Wei-Shi Zheng, Liqiang Nie
+                  <br>
+                  <a href="https://arxiv.org/abs/2610.02323">arXiv</a> /
+                  <a href="https://jiutian-vl.github.io/ProAct-page/">project page</a>
+                  <p></p>
+                  <p>
+                    ProAct is a world-calibrated proposal-to-action framework that makes the generative source of flow-based VLA policies predictable via a Proposal Expert and a prospective World Expert.
+                  </p>
+                </td>
+              </tr>
+
+
                 <!-- UniMPA -->
               <tr onmouseout="star_stop()" onmouseover="star_start()">
                 <td style="padding:16px;width:40%;vertical-align:middle">
